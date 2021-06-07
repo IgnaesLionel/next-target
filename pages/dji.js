@@ -1,5 +1,6 @@
 import React from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
+import Grid00 from "../components/Grid00/Grid00";
 
 export default function dji({ data, spread, dataFut }) {
   data = JSON.parse(data);
@@ -80,9 +81,12 @@ export default function dji({ data, spread, dataFut }) {
         </div>
       </table>
       <h4>DJI CFD</h4>
-      <ProRealTime data={data} spread={0} />
+      <ProRealTime data={data} spread={0} market="CFD" />
       <h4>DJI FUTUR</h4>
-      <ProRealTime data={dataFut} spread={spread} />
+      <ProRealTime data={dataFut} spread={spread} market="F" />
+      <h4>GRID</h4>
+      <Grid00 data={data} spread={spread} />
+      <Grid00 data={data} spread={0} />
     </div>
   );
 }
