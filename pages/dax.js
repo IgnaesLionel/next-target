@@ -2,13 +2,13 @@ import React from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
 
-export default function dji({ data, spread, dataFut }) {
+export default function dax({ data, spread, dataFut }) {
   data = JSON.parse(data);
   dataFut = JSON.parse(dataFut);
 
   return (
     <div className="accueil">
-      <h1> Dow Jones CFD </h1>
+      <h1> Dax CFD </h1>
       <table>
         <div>
           <tr>
@@ -93,17 +93,15 @@ export default function dji({ data, spread, dataFut }) {
 }
 
 export async function getStaticProps() {
-  //ou getServerSideProps pour des données tres dynamique
-  //fetch Get Method coté serveur
-  const ppCFD = await fetch("http://35.169.149.148:1337/djis/6").then((r) =>
+  const ppCFD = await fetch("http://35.169.149.148:1337/djis/12").then((r) =>
     r.json()
-  ); //  stream object  ----> body headers __proto__
+  );
 
-  const ppFut = await fetch("http://35.169.149.148:1337/djis/9").then((r) =>
+  const ppFut = await fetch("http://35.169.149.148:1337/djis/13").then((r) =>
     r.json()
-  ); //  stream object  ----> body headers __proto__
+  );
 
-  const spreadData = await fetch("http://35.169.149.148:1337/spreads/1").then(
+  const spreadData = await fetch("http://35.169.149.148:1337/spreads/3").then(
     (r) => r.json()
   );
 

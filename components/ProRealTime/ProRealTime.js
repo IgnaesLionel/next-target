@@ -13,7 +13,7 @@ const ProRealTime = ({ data, spread, market }) => {
         cols="33"
         value={`
         defparam drawonlastbaronly = true
-        Voffset = 3*pipsize
+        Voffset = 1*pipsize
         gap = ${spread}
         DPP = ${data.DPP} + gap
         DR1 = ${data.DR1} + gap
