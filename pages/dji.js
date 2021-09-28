@@ -8,7 +8,9 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
-      <h1> Dow Jones CFD </h1>
+      <h1> Dow Jones / Wall Street {timeFut}</h1>
+      <h2> indice - {timeCfd}</h2>
+      <h2> future - {timeFut}</h2>
       <table>
         <div>
           <tr>
@@ -80,9 +82,9 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           </tr>
         </div>
       </table>
-      <h4>DJI CFD</h4>
+      <h4>Dji Spot indicator</h4>
       <ProRealTime data={data} spread={0} market="CFD" />
-      <h4>DJI FUTUR</h4>
+      <h4>Dji Futur indicator</h4>
       <ProRealTime data={dataFut} spread={spread} market="F" />
       <h4>GRID CFD</h4>
       <Grid00 data={data} spread={0} market="C" />
