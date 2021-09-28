@@ -2,9 +2,10 @@ import React from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
 
-export default function dax({ data, spread, dataFut }) {
+export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
   data = JSON.parse(data);
   dataFut = JSON.parse(dataFut);
+  console.log(timeFut);
 
   return (
     <div className="accueil">
@@ -108,8 +109,10 @@ export async function getStaticProps() {
   return {
     props: {
       data: ppCFD.PointPivots,
+      timeCfd: ppCFD.updated_at,
       spread: spreadData.spread,
       dataFut: ppFut.PointPivots,
+      timeFut: ppFut.updated_at,
     },
     revalidate: 5,
   };
