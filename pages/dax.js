@@ -5,7 +5,7 @@ import Grid00 from "../components/Grid00/Grid00";
 export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
   data = JSON.parse(data);
   dataFut = JSON.parse(dataFut);
-  console.log(timeFut);
+  console.log(`coucou`);
 
   return (
     <div className="accueil">
