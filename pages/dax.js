@@ -9,7 +9,7 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
-      <h1> Dax CFD {timeFut}</h1>
+      <h1> Dax spot {timeFut}</h1>
       <table>
         <div>
           <tr>
