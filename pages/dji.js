@@ -62,7 +62,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
-            <td>{data.Wdate} </td>
+            <td>{data.Mdate} </td>
             <td>djiMPP = {data.MPP}</td>
           </tr>
           <tr>
