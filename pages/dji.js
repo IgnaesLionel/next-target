@@ -13,8 +13,14 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
       <h2> future - {timeFut}</h2>
       <table>
         <div>
+        <tr>
+        <td>
+          Pivots Journalier avec les données de la période du {data.Ddate}
+        </td>
+      </tr>
+      <tr>
           <tr>
-            <td>{data.Ddate} </td>
+
             <td>djiDPP = {data.DClose}</td>
           </tr>
           <tr>
@@ -38,7 +44,12 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
-            <td>{data.Wdate} </td>
+            <td>
+              Pivots Hebdo avec les données de la période de la semaine du{" "}
+              {data.Wdate}
+            </td>
+          </tr>
+          <tr>
             <td>djiWPP = {data.WPP}</td>
           </tr>
           <tr>
@@ -62,7 +73,11 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
-            <td>{data.Mdate} </td>
+            <td>
+              Pivots Mensuel avec les données de la période du mois {data.Mdate}
+            </td>
+          </tr>
+          <tr>
             <td>djiMPP = {data.MPP}</td>
           </tr>
           <tr>

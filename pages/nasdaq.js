@@ -14,9 +14,14 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
       <table>
         <div>
           <tr>
-            <td>{data.Ddate} </td>
+            <td>
+              Pivots Journalier avec les données de la période du {data.Ddate}
+            </td>
+          </tr>
+          <tr>
             <td>nqDPP = {data.DClose}</td>
           </tr>
+
           <tr>
             <td>nqDR1 = {data.DR1}</td>
           </tr>
@@ -38,7 +43,12 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
-            <td>{data.Wdate} </td>
+            <td>
+              Pivots Hebdo avec les données de la période de la semaine du{" "}
+              {data.Wdate}
+            </td>
+          </tr>
+          <tr>
             <td>nqWPP = {data.WPP}</td>
           </tr>
           <tr>
@@ -62,7 +72,11 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
-            <td>{data.Mdate} </td>
+            <td>
+              Pivots Mensuel avec les données de la période du mois {data.Mdate}
+            </td>
+          </tr>
+          <tr>
             <td>nqMPP = {data.MPP}</td>
           </tr>
           <tr>
