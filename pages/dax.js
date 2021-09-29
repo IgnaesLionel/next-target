@@ -14,14 +14,13 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
       <h2> future - {timeFut}</h2>
       <table>
         <div>
-        <tr>
-        <td>
-          Pivots Journalier avec les données de la période du {data.Ddate}
-        </td>
-      </tr>
-      <tr>
           <tr>
+            <td>
+              Pivots Journalier avec les données de la période du {data.Ddate}
+            </td>
+          </tr>
 
+          <tr>
             <td>daxDPP = {data.DClose}</td>
           </tr>
           <tr>

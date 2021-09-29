@@ -13,14 +13,13 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
       <h2> future - {timeFut}</h2>
       <table>
         <div>
-        <tr>
-        <td>
-          Pivots Journalier avec les données de la période du {data.Ddate}
-        </td>
-      </tr>
-      <tr>
           <tr>
+            <td>
+              Pivots Journalier avec les données de la période du {data.Ddate}
+            </td>
+          </tr>
 
+          <tr>
             <td>djiDPP = {data.DClose}</td>
           </tr>
           <tr>
