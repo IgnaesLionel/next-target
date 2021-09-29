@@ -14,6 +14,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
       <table>
         <div>
           <tr>
+            <td>{data.Ddate} </td>
             <td>nqDPP = {data.DClose}</td>
           </tr>
           <tr>
@@ -37,6 +38,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
+            <td>{data.Wdate} </td>
             <td>nqWPP = {data.WPP}</td>
           </tr>
           <tr>
@@ -60,6 +62,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
+            <td>{data.Mdate} </td>
             <td>nqMPP = {data.MPP}</td>
           </tr>
           <tr>
