@@ -8,7 +8,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
-      <h1> Nasdaq{timeFut}</h1>
+      <h1> Nasdaq</h1>
       <h2> indice - {timeCfd}</h2>
       <h2> future - {timeFut}</h2>
       <table>

@@ -9,12 +9,13 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
-      <h1> Dax - Germany{timeFut}</h1>
+      <h1> Dax - Germany</h1>
       <h2> indice - {timeCfd}</h2>
       <h2> future - {timeFut}</h2>
       <table>
         <div>
           <tr>
+            <td>{data.Ddate} </td>
             <td>daxDPP = {data.DClose}</td>
           </tr>
           <tr>
@@ -38,6 +39,7 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
+            <td>{data.Wdate} </td>
             <td>daxWPP = {data.WPP}</td>
           </tr>
           <tr>
@@ -61,6 +63,7 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
         </div>
         <div>
           <tr>
+            <td>{data.Mdate} </td>
             <td>daxMPP = {data.MPP}</td>
           </tr>
           <tr>

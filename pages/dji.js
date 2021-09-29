@@ -8,7 +8,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
-      <h1> Dow Jones / Wall Street {timeFut}</h1>
+      <h1> Dow Jones / Wall Street</h1>
       <h2> indice - {timeCfd}</h2>
       <h2> future - {timeFut}</h2>
       <table>
