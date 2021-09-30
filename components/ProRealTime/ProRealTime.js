@@ -67,6 +67,17 @@ MClose = ${data.MClose} + gap
         DRAWHLINE(MS2)coloured(255, 192, 203)
         DRAWHLINE(MS3)coloured(255, 192, 203)
 
+        DRAWHLINE(DayHigh)coloured(255,255,255)
+        DRAWHLINE(DayLow)coloured(255,255,255)
+        DRAWHLINE(DayClose)coloured(255,255,255)
+        DRAWHLINE(WHigh)coloured(255,255,255)
+        DRAWHLINE(WLow)coloured(255,255,255)
+        DRAWHLINE(WClose)coloured(255,255,255)
+        DRAWHLINE(MHigh)coloured(255,255,255)
+        DRAWHLINE(MLow)coloured(255,255,255)
+        DRAWHLINE(MClose)coloured(255,255,255)
+
+
         DRAWTEXT("Pivot D ${market}.",barindex+50,DPP+Voffset,SansSerif,Bold,10)coloured(0,255,0)
         DRAWTEXT("DR1 ${market}",barindex+50,DR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
         DRAWTEXT("DR2 ${market}",barindex+500,DR2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
@@ -98,7 +109,7 @@ MClose = ${data.MClose} + gap
         DRAWTEXT("Last Month Low ${market}",barindex+50,MLow+Voffset,SansSerif,Bold,10)coloured(255,255,255)
         DRAWTEXT("Last Month Close ${market}",barindex+50,MClose+Voffset,SansSerif,Bold,10)coloured(255,255,255)
 
-        RETURN DayHigh COLOURED(255,255,255) STYLE(line,2) AS"DHigh  ${market}", DayLow COLOURED(255,255,255) STYLE(line,2) AS"DLow  ${market}", DayClose COLOURED(255,255,255) STYLE(line,2) AS"DClose  ${market}", WHigh COLOURED(255,255,255) STYLE(line,2) AS"WHigh  ${market}", WLow COLOURED(255,255,255) STYLE(line,2) AS"DLow  ${market}", WClose COLOURED(255,255,255) STYLE(line,2) AS"WClose  ${market}", MHigh COLOURED(255,255,255) STYLE(line,2) AS"MHigh  ${market}", MLow COLOURED(255,255,255) STYLE(line,2) AS"MLow  ${market}", MClose COLOURED(255,255,255) STYLE(line,2) AS"MClose  ${market}" 
+        RETURN
         `}
       />
     </div>
