@@ -45,7 +45,10 @@ MHigh = ${data.MHigh} + gap
 MLow = ${data.MLow} + gap
 MClose = ${data.MClose} + gap
  
-        DRAWHLINE(14805)coloured(0,200,0)
+        DRAWHLINE(DPP)coloured(0,200,0)
+        DRAWHLINE(DS1)coloured(0,200,0)
+        DRAWHLINE(DR1)coloured(0,200,0)
+        DRAWHLINE(DS2)coloured(0,200,0)
         DRAWTEXT("Pivot D ${market}.",barindex-2,DPP+Voffset,SansSerif,Bold,10)coloured(0,255,0)
         DRAWTEXT("DR1 ${market}",barindex-2,DR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
         DRAWTEXT("DR2 ${market}",barindex-2,DR2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
