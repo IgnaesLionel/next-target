@@ -1,6 +1,7 @@
 import React from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
+import Link from "next/link";
 
 export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
   data = JSON.parse(data);
@@ -8,17 +9,35 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
+      <ul>
+        <li>
+          <Link href="/dji">
+            <a>Dji (Wall Street)</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/dax">
+            <a>dji (Germany 40)</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/nasdaq">
+            <a>Nasdaq (US-TECH 100)</a>
+          </Link>
+        </li>
+      </ul>
       <h1> Dow Jones / Wall Street</h1>
       <h2> indice - {timeCfd}</h2>
       <h2> future - {timeFut}</h2>
       <table>
-        <div>
-          <tr>
-            <td>
-              Pivots Journalier avec les données de la période du {data.Ddate}
-            </td>
-          </tr>
-
+        <thead>
+          <strong>
+            {" "}
+            Pivots Journalier CASH avec les données de la période du{" "}
+            {data.Ddate}{" "}
+          </strong>
+        </thead>
+        <tbody>
           <tr>
             <td>djiDPP = {data.DClose}</td>
           </tr>
@@ -40,14 +59,13 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           <tr>
             <td>djiDS3 = {data.DS3}</td>
           </tr>
-        </div>
-        <div>
-          <tr>
-            <td>
-              Pivots Hebdo avec les données de la période de la semaine du{" "}
-              {data.Wdate}
-            </td>
-          </tr>
+        </tbody>
+
+        <thead>
+          Pivots Hebdo CASH avec les données de la période de la semaine du{" "}
+          {data.Wdate}
+        </thead>
+        <tbody>
           <tr>
             <td>djiWPP = {data.WPP}</td>
           </tr>
@@ -69,13 +87,11 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           <tr>
             <td>djiWS3 = {data.WS3}</td>
           </tr>
-        </div>
-        <div>
-          <tr>
-            <td>
-              Pivots Mensuel avec les données de la période du mois {data.Mdate}
-            </td>
-          </tr>
+        </tbody>
+        <thead>
+          Pivots Mensuel CASH avec les données de la période {data.Mdate}
+        </thead>
+        <tbody>
           <tr>
             <td>djiMPP = {data.MPP}</td>
           </tr>
@@ -97,7 +113,87 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           <tr>
             <td>djiMS3 = {data.MS3}</td>
           </tr>
-        </div>
+        </tbody>
+        <thead>
+          Pivots Journalier Future avec les données de la période du{" "}
+          {dataFut.Ddate}
+        </thead>
+
+        <tr>
+          <td>djiDPP = {dataFut.DClose}</td>
+        </tr>
+        <tr>
+          <td>djiDR1 = {dataFut.DR1}</td>
+        </tr>
+        <tr>
+          <td>djiDS1 = {dataFut.DS1}</td>
+        </tr>
+        <tr>
+          <td>djiDR2 = {dataFut.DR2}</td>
+        </tr>
+        <tr>
+          <td>djiDS2 = {dataFut.DS2}</td>
+        </tr>
+        <tr>
+          <td>djiDR3 = {dataFut.DR3}</td>
+        </tr>
+        <tr>
+          <td>djiDS3 = {dataFut.DS3}</td>
+        </tr>
+
+        <thead>
+          Pivots Hebdo Future avec les données de la période de la semaine du{" "}
+          {dataFut.Wdate}
+        </thead>
+        <tbody>
+          <tr>
+            <td>djiWPP = {dataFut.WPP}</td>
+          </tr>
+          <tr>
+            <td>djiWR1 = {dataFut.WR1}</td>
+          </tr>
+          <tr>
+            <td>djiWS1 = {dataFut.WS1}</td>
+          </tr>
+          <tr>
+            <td>djiWR2 = {dataFut.WR2}</td>
+          </tr>
+          <tr>
+            <td>djiWS2 = {dataFut.WS2}</td>
+          </tr>
+          <tr>
+            <td>djiWR3 = {dataFut.WR3}</td>
+          </tr>
+          <tr>
+            <td>djiWS3 = {dataFut.WS3}</td>
+          </tr>
+        </tbody>
+        <thead>
+          Pivots Mensuel Future avec les données de la période {dataFut.Ddate}
+        </thead>
+        <tbody>
+          <tr>
+            <td>djiMPP = {dataFut.MPP}</td>
+          </tr>
+          <tr>
+            <td>djiMR1 = {dataFut.MR1}</td>
+          </tr>
+          <tr>
+            <td>djiMS1 = {dataFut.MS1}</td>
+          </tr>
+          <tr>
+            <td>djiMR2 = {dataFut.MR2}</td>
+          </tr>
+          <tr>
+            <td>djiMS2 = {dataFut.MS2}</td>
+          </tr>
+          <tr>
+            <td>djiMR3 = {dataFut.MR3}</td>
+          </tr>
+          <tr>
+            <td>djiMS3 = {dataFut.MS3}</td>
+          </tr>
+        </tbody>
       </table>
       <h4>Dji Spot indicator</h4>
       <ProRealTime data={data} spread={0} market="CFD" />

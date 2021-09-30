@@ -2,36 +2,36 @@ import React from "react";
 
 const Grid00 = ({ data, spread, market }) => {
   let style = [
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
-    "COLOURED(128, 128, 128)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
+    "COLOURED(255,0,0)",
   ];
 
   let roundedNumber = [];
-  let closeCashValue = data.WPP;
+  let closeCashValue = data.DPP;
 
   closeCashValue = parseInt(closeCashValue, 10);
-  closeCashValue = closeCashValue / 100;
+  closeCashValue = closeCashValue / 1000;
   closeCashValue = parseInt(closeCashValue);
-  closeCashValue = closeCashValue + "00";
+  closeCashValue = closeCashValue + "000";
   closeCashValue = parseFloat(closeCashValue);
 
   roundedNumber.push(
     closeCashValue,
-    closeCashValue + 100,
-    closeCashValue + 200,
-    closeCashValue + 300,
-    closeCashValue + 400,
-    closeCashValue - 100,
-    closeCashValue - 200,
-    closeCashValue - 300,
-    closeCashValue - 400
+    closeCashValue + 250,
+    closeCashValue + 500,
+    closeCashValue + 750,
+    closeCashValue + 1000,
+    closeCashValue - 250,
+    closeCashValue - 500,
+    closeCashValue - 750,
+    closeCashValue - 1000
   );
 
   for (let i = 0; i < 9; i++) {

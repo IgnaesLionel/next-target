@@ -9,7 +9,7 @@ export default function Home() {
       <ul>
         <li>
           <Link href="/dji">
-            <a>Dji (wall street)</a>
+            <a>Dji (Wall Street)</a>
           </Link>
         </li>
         <li>
@@ -18,8 +18,8 @@ export default function Home() {
           </Link>
         </li>
         <li>
-          <Link href="/blog/hello-world">
-            <a>Blog Post</a>
+          <Link href="/nasdaq">
+            <a>Nasdaq (US-TECH 100)</a>
           </Link>
         </li>
       </ul>
