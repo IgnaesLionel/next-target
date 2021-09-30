@@ -88,7 +88,7 @@ const Grid00 = ({ data, spread, market }) => {
      DRAWTEXT("${roundedNumber[6]} ${market}",barindex+50,g6+Voffset,SansSerif,Bold,10)coloured(255,255,255)
      DRAWTEXT("${roundedNumber[7]} ${market}",barindex+50,g7+Voffset,SansSerif,Bold,10)coloured(255,255,255)
      DRAWTEXT("${roundedNumber[8]} ${market}",barindex+50,g8+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-    RETURN g0 ${style[0]} STYLE(line,3) AS"g0",  g1 ${style[1]} STYLE(line,3) AS" g1",  g2 ${style[2]} STYLE(line,3) AS" g2",  g3 ${style[3]} STYLE(line,3) AS" g3",  g4 ${style[4]} STYLE(line,3) AS" g4",  g5 ${style[5]} STYLE(line,3) AS" g5",  g6 ${style[6]} STYLE(line,3) AS" g6",  g7 ${style[7]} STYLE(line,3) AS" g7",  g8 ${style[8]} STYLE(line,3) AS" g8"
+    RETURN 
     `}
       />
     </div>
