@@ -31,7 +31,25 @@ const Grid00 = ({ data, spread, market }) => {
     closeCashValue - 250,
     closeCashValue - 500,
     closeCashValue - 750,
-    closeCashValue - 1000
+    closeCashValue - 1000,
+    closeCashValue + 100,
+    closeCashValue + 200,
+    closeCashValue + 300,
+    closeCashValue + 400,
+    closeCashValue + 500,
+    closeCashValue + 600,
+    closeCashValue + 700,
+    closeCashValue + 800,
+    closeCashValue + 900,
+    closeCashValue - 100,
+    closeCashValue - 200,
+    closeCashValue - 300,
+    closeCashValue - 400,
+    closeCashValue - 500,
+    closeCashValue - 600,
+    closeCashValue - 700,
+    closeCashValue - 800,
+    closeCashValue - 900
   );
 
   for (let i = 0; i < 9; i++) {
@@ -67,6 +85,24 @@ const Grid00 = ({ data, spread, market }) => {
      g6 = ${roundedNumber[6]} + gap
      g7 = ${roundedNumber[7]} + gap
      g8 = ${roundedNumber[8]} + gap
+     g9 = ${roundedNumber[9]} + gap
+     g10 = ${roundedNumber[10]} + gap
+     g11 = ${roundedNumber[11]} + gap
+     g12 = ${roundedNumber[12]} + gap
+     g13 = ${roundedNumber[13]} + gap
+     g14 = ${roundedNumber[14]} + gap
+     g15 = ${roundedNumber[15]} + gap
+     g16 = ${roundedNumber[16]} + gap
+     g17 = ${roundedNumber[17]} + gap
+     g18 = ${roundedNumber[18]} + gap
+     g19 = ${roundedNumber[19]} + gap
+     g20 = ${roundedNumber[20]} + gap
+     g21 = ${roundedNumber[21]} + gap
+     g22 = ${roundedNumber[22]} + gap
+     g23 = ${roundedNumber[23]} + gap
+     g24 = ${roundedNumber[24]} + gap
+     g25 = ${roundedNumber[25]} + gap
+     g26 = ${roundedNumber[26]} + gap
 
 
      DRAWHLINE(g0)coloured(255,0,0)
@@ -78,6 +114,24 @@ const Grid00 = ({ data, spread, market }) => {
      DRAWHLINE(g6)coloured(255,0,0)
      DRAWHLINE(g7)coloured(255,0,0)
      DRAWHLINE(g8)coloured(255,0,0)
+     DRAWHLINE(g9)coloured(100,100,100)
+     DRAWHLINE(g10)coloured(100,100,100)
+     DRAWHLINE(g11)coloured(100,100,100)
+     DRAWHLINE(g12)coloured(100,100,100)
+     DRAWHLINE(g13)coloured(100,100,100)
+     DRAWHLINE(g14)coloured(100,100,100)
+     DRAWHLINE(g15)coloured(100,100,100)
+     DRAWHLINE(g16)coloured(100,100,100)
+     DRAWHLINE(g17)coloured(100,100,100)
+     DRAWHLINE(g18)coloured(100,100,100)
+     DRAWHLINE(g19)coloured(100,100,100)
+     DRAWHLINE(g20)coloured(100,100,100)
+     DRAWHLINE(g21)coloured(100,100,100)
+     DRAWHLINE(g22)coloured(100,100,100)
+     DRAWHLINE(g23)coloured(100,100,100)
+     DRAWHLINE(g24)coloured(100,100,100)
+     DRAWHLINE(g25)coloured(100,100,100)
+     DRAWHLINE(g26)coloured(100,100,100)
 
      DRAWTEXT("${roundedNumber[0]} ${market}",barindex+50,g0+Voffset,SansSerif,Bold,10)coloured(255,255,255)
      DRAWTEXT("${roundedNumber[1]} ${market}",barindex+50,g1+Voffset,SansSerif,Bold,10)coloured(255,255,255)
