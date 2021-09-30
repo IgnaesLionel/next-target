@@ -68,15 +68,26 @@ const Grid00 = ({ data, spread, market }) => {
      g7 = ${roundedNumber[7]} + gap
      g8 = ${roundedNumber[8]} + gap
 
-     DRAWTEXT("${roundedNumber[0]} ${market}",barindex-2,g0+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[1]} ${market}",barindex-2,g1+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[2]} ${market}",barindex-2,g2+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[3]} ${market}",barindex-2,g3+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[4]} ${market}",barindex-2,g4+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[5]} ${market}",barindex-2,g5+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[6]} ${market}",barindex-2,g6+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[7]} ${market}",barindex-2,g7+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-     DRAWTEXT("${roundedNumber[8]} ${market}",barindex-2,g8+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+
+     DRAWHLINE(g0)coloured(255,0,0)
+     DRAWHLINE(g1)coloured(255,0,0)
+     DRAWHLINE(g2)coloured(255,0,0)
+     DRAWHLINE(g3)coloured(255,0,0)
+     DRAWHLINE(g4)coloured(255,0,0)
+     DRAWHLINE(g5)coloured(255,0,0)
+     DRAWHLINE(g6)coloured(255,0,0)
+     DRAWHLINE(g7)coloured(255,0,0)
+     DRAWHLINE(g8)coloured(255,0,0)
+
+     DRAWTEXT("${roundedNumber[0]} ${market}",barindex+50,g0+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[1]} ${market}",barindex+50,g1+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[2]} ${market}",barindex+50,g2+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[3]} ${market}",barindex+50,g3+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[4]} ${market}",barindex+50,g4+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[5]} ${market}",barindex+50,g5+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[6]} ${market}",barindex+50,g6+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[7]} ${market}",barindex+50,g7+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+     DRAWTEXT("${roundedNumber[8]} ${market}",barindex+50,g8+Voffset,SansSerif,Bold,10)coloured(255,255,255)
     RETURN g0 ${style[0]} STYLE(line,3) AS"g0",  g1 ${style[1]} STYLE(line,3) AS" g1",  g2 ${style[2]} STYLE(line,3) AS" g2",  g3 ${style[3]} STYLE(line,3) AS" g3",  g4 ${style[4]} STYLE(line,3) AS" g4",  g5 ${style[5]} STYLE(line,3) AS" g5",  g6 ${style[6]} STYLE(line,3) AS" g6",  g7 ${style[7]} STYLE(line,3) AS" g7",  g8 ${style[8]} STYLE(line,3) AS" g8"
     `}
       />
