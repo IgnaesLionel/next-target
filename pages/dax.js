@@ -198,13 +198,13 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
         </tr>
       </table>
       <h4>Dax Spot indicator</h4>
-      <ProRealTime data={data} spread={0} market="CFD" />
+      <ProRealTime data={data} spread={0} market="Cash" />
       <h4>Dax Futur indicator</h4>
-      <ProRealTime data={dataFut} spread={spread} market="F" />
+      <ProRealTime data={dataFut} spread={spread} market="Fut" />
       <h4>GRID CFD</h4>
-      <Grid00 data={dataFut} spread={0} market="C" />
+      <Grid00 data={dataFut} spread={0} market="Cash" />
       grid futur
-      <Grid00 data={dataFut} spread={0} market="F" />
+      <Grid00 data={dataFut} spread={0} market="Fut" />
     </div>
   );
 }

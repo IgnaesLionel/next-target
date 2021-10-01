@@ -201,13 +201,13 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </tbody>
       </table>
       <h4>Dji Spot indicator</h4>
-      <ProRealTime data={data} spread={0} market="CFD" />
+      <ProRealTime data={data} spread={0} market="Cash" />
       <h4>Dji Futur indicator</h4>
-      <ProRealTime data={dataFut} spread={spread} market="F" />
+      <ProRealTime data={dataFut} spread={spread} market="Fut" />
       <h4>GRID CFD</h4>
-      <Grid00 data={data} spread={0} market="C" />
+      <Grid00 data={data} spread={0} market="Cash" />
       grid futur
-      <Grid00 data={data} spread={spread} market="F" />
+      <Grid00 data={data} spread={spread} market="Fut" />
     </div>
   );
 }
