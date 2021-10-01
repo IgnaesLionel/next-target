@@ -25,6 +25,11 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
             <a>Nasdaq (US-TECH 100)</a>
           </Link>
         </li>
+        <li>
+          <Link href="/sp500">
+            <a>Sp500 (US-TECH 500)</a>
+          </Link>
+        </li>
       </ul>
       <h1> Nasdaq</h1>
       <h2> indice - {timeCfd}</h2>
