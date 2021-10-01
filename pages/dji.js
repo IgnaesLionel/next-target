@@ -17,7 +17,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </li>
         <li>
           <Link href="/dax">
-            <a>dji (Germany 40)</a>
+            <a>Dax (Germany 40)</a>
           </Link>
         </li>
         <li>
