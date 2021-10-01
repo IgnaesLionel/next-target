@@ -3,7 +3,7 @@ import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
 import Link from "next/link";
 
-export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
+export default function sp({ data, spread, dataFut, timeFut, timeCfd }) {
   data = JSON.parse(data);
   dataFut = JSON.parse(dataFut);
 
@@ -31,7 +31,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </Link>
         </li>
       </ul>
-      <h1> Nasdaq</h1>
+      <h1> Sp500</h1>
       <h2> indice - {timeCfd}</h2>
       <h2> future - {timeFut}</h2>
       <table>
@@ -42,25 +42,25 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </td>
         </tr>
         <tr>
-          <td>NasdaqDPP = {data.DClose}</td>
+          <td>SpDPP = {data.DClose}</td>
         </tr>
         <tr>
-          <td>NasdaqDR1 = {data.DR1}</td>
+          <td>SpDR1 = {data.DR1}</td>
         </tr>
         <tr>
-          <td>NasdaqDS1 = {data.DS1}</td>
+          <td>SpDS1 = {data.DS1}</td>
         </tr>
         <tr>
-          <td>NasdaqDR2 = {data.DR2}</td>
+          <td>SpDR2 = {data.DR2}</td>
         </tr>
         <tr>
-          <td>NasdaqDS2 = {data.DS2}</td>
+          <td>SpDS2 = {data.DS2}</td>
         </tr>
         <tr>
-          <td>NasdaqDR3 = {data.DR3}</td>
+          <td>SpDR3 = {data.DR3}</td>
         </tr>
         <tr>
-          <td>NasdaqDS3 = {data.DS3}</td>
+          <td>SpDS3 = {data.DS3}</td>
         </tr>
         <tr>
           <td>
@@ -69,25 +69,25 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </td>
         </tr>
         <tr>
-          <td>NasdaqWPP = {data.WPP}</td>
+          <td>SpWPP = {data.WPP}</td>
         </tr>
         <tr>
-          <td>NasdaqWR1 = {data.WR1}</td>
+          <td>SpWR1 = {data.WR1}</td>
         </tr>
         <tr>
-          <td>NasdaqWS1 = {data.WS1}</td>
+          <td>SpWS1 = {data.WS1}</td>
         </tr>
         <tr>
-          <td>NasdaqWR2 = {data.WR2}</td>
+          <td>SpWR2 = {data.WR2}</td>
         </tr>
         <tr>
-          <td>NasdaqWS2 = {data.WS2}</td>
+          <td>SpWS2 = {data.WS2}</td>
         </tr>
         <tr>
-          <td>NasdaqWR3 = {data.WR3}</td>
+          <td>SpWR3 = {data.WR3}</td>
         </tr>
         <tr>
-          <td>NasdaqWS3 = {data.WS3}</td>
+          <td>SpWS3 = {data.WS3}</td>
         </tr>
         <tr>
           <td>
@@ -95,25 +95,25 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </td>
         </tr>
         <tr>
-          <td>NasdaqMPP = {data.MPP}</td>
+          <td>SpMPP = {data.MPP}</td>
         </tr>
         <tr>
-          <td>NasdaqMR1 = {data.MR1}</td>
+          <td>SpMR1 = {data.MR1}</td>
         </tr>
         <tr>
-          <td>NasdaqMS1 = {data.MS1}</td>
+          <td>SpMS1 = {data.MS1}</td>
         </tr>
         <tr>
-          <td>NasdaqMR2 = {data.MR2}</td>
+          <td>SpMR2 = {data.MR2}</td>
         </tr>
         <tr>
-          <td>NasdaqMS2 = {data.MS2}</td>
+          <td>SpMS2 = {data.MS2}</td>
         </tr>
         <tr>
-          <td>NasdaqMR3 = {data.MR3}</td>
+          <td>SpMR3 = {data.MR3}</td>
         </tr>
         <tr>
-          <td>NasdaqMS3 = {data.MS3}</td>
+          <td>SpMS3 = {data.MS3}</td>
         </tr>
 
         <tr>
@@ -123,25 +123,25 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </td>
         </tr>
         <tr>
-          <td>NasdaqDPP = {dataFut.DClose}</td>
+          <td>SpDPP = {dataFut.DClose}</td>
         </tr>
         <tr>
-          <td>NasdaqDR1 = {dataFut.DR1}</td>
+          <td>SpDR1 = {dataFut.DR1}</td>
         </tr>
         <tr>
-          <td>NasdaqDS1 = {dataFut.DS1}</td>
+          <td>SpDS1 = {dataFut.DS1}</td>
         </tr>
         <tr>
-          <td>NasdaqDR2 = {dataFut.DR2}</td>
+          <td>SpDR2 = {dataFut.DR2}</td>
         </tr>
         <tr>
-          <td>NasdaqDS2 = {dataFut.DS2}</td>
+          <td>SpDS2 = {dataFut.DS2}</td>
         </tr>
         <tr>
-          <td>NasdaqDR3 = {dataFut.DR3}</td>
+          <td>SpDR3 = {dataFut.DR3}</td>
         </tr>
         <tr>
-          <td>NasdaqDS3 = {dataFut.DS3}</td>
+          <td>SpDS3 = {dataFut.DS3}</td>
         </tr>
         <tr>
           <td>
@@ -150,25 +150,25 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </td>
         </tr>
         <tr>
-          <td>NasdaqWPP = {dataFut.WPP}</td>
+          <td>SpWPP = {dataFut.WPP}</td>
         </tr>
         <tr>
-          <td>NasdaqWR1 = {dataFut.WR1}</td>
+          <td>SpWR1 = {dataFut.WR1}</td>
         </tr>
         <tr>
-          <td>NasdaqWS1 = {dataFut.WS1}</td>
+          <td>SpWS1 = {dataFut.WS1}</td>
         </tr>
         <tr>
-          <td>NasdaqWR2 = {dataFut.WR2}</td>
+          <td>SpWR2 = {dataFut.WR2}</td>
         </tr>
         <tr>
-          <td>NasdaqWS2 = {dataFut.WS2}</td>
+          <td>SpWS2 = {dataFut.WS2}</td>
         </tr>
         <tr>
-          <td>NasdaqWR3 = {dataFut.WR3}</td>
+          <td>SpWR3 = {dataFut.WR3}</td>
         </tr>
         <tr>
-          <td>NasdaqWS3 = {dataFut.WS3}</td>
+          <td>SpWS3 = {dataFut.WS3}</td>
         </tr>
         <tr>
           <td>
@@ -176,30 +176,30 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           </td>
         </tr>
         <tr>
-          <td>NasdaqMPP = {dataFut.MPP}</td>
+          <td>SpMPP = {dataFut.MPP}</td>
         </tr>
         <tr>
-          <td>NasdaqMR1 = {dataFut.MR1}</td>
+          <td>SpMR1 = {dataFut.MR1}</td>
         </tr>
         <tr>
-          <td>NasdaqMS1 = {dataFut.MS1}</td>
+          <td>SpMS1 = {dataFut.MS1}</td>
         </tr>
         <tr>
-          <td>NasdaqMR2 = {dataFut.MR2}</td>
+          <td>SpMR2 = {dataFut.MR2}</td>
         </tr>
         <tr>
-          <td>NasdaqMS2 = {dataFut.MS2}</td>
+          <td>SpMS2 = {dataFut.MS2}</td>
         </tr>
         <tr>
-          <td>NasdaqMR3 = {dataFut.MR3}</td>
+          <td>SpMR3 = {dataFut.MR3}</td>
         </tr>
         <tr>
-          <td>NasdaqMS3 = {dataFut.MS3}</td>
+          <td>SpMS3 = {dataFut.MS3}</td>
         </tr>
       </table>
-      <h4>Nasdaq Spot indicator</h4>
+      <h4>Sp Spot indicator</h4>
       <ProRealTime data={data} spread={0} market="CFD" />
-      <h4>Nasdaq Futur indicator</h4>
+      <h4>Sp Futur indicator</h4>
       <ProRealTime data={dataFut} spread={spread} market="F" />
       <h4>GRID</h4>
       <Grid00 data={dataFut} spread={0} market="C" />
