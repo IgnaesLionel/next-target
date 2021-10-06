@@ -5,7 +5,7 @@ const ProRealTime = ({ data, spread, market }) => {
   const [commentText, setCommentText] = useState(`
   defparam drawonlastbaronly = true
   Voffset = 1*pipsize
-  gap = 0 
+  gap = 0
   DPP = ${data.DPP} + gap
   DR1 = ${data.DR1} + gap
   DS1 = ${data.DS1} + gap
@@ -106,12 +106,13 @@ MClose = ${data.MClose} + gap
 
   const copy = async () => {
 
-      const tempInput = document.createElement('input')
-      tempInput.value = `${commentText}`
+      const tempInput = document.createElement('textarea')
+      tempInput.innerHTML = `${commentText}`
+
       document.body.appendChild(tempInput)
       tempInput.select()
       document.execCommand('copy')
-      document.body.removeChild(tempInput)
+      document.b.ody.removeChild(tempInput)
       ;
   }
 
