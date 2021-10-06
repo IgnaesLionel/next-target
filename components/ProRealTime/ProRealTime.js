@@ -105,20 +105,20 @@ MClose = ${data.MClose} + gap
   `)
 
   const copy = async () => {
-     navigator.clipboard.writeText(commentText);
+/*      navigator.clipboard.writeText(commentText);
   
     if (navigator.clipboard && window.isSecureContext) {
       // navigator clipboard api method'
       return await navigator.clipboard.writeText(commentText);
   } else {
-      // text area method
+      // text area method */
       const tempInput = document.createElement('input')
-      tempInput.value = 'https://bionicjulia.com/examplelink'
+      tempInput.value = `${commentText}`
       document.body.appendChild(tempInput)
       tempInput.select()
       document.execCommand('copy')
       document.body.removeChild(tempInput)
-      };
+      ;
   }
 
 
