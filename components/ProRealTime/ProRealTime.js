@@ -105,8 +105,31 @@ MClose = ${data.MClose} + gap
   `)
 
   const copy = async () => {
-    await navigator.clipboard.writeText(commentText);
+     navigator.clipboard.writeText(commentText);
   
+    if (navigator.clipboard && window.isSecureContext) {
+      // navigator clipboard api method'
+      return await navigator.clipboard.writeText(commentText);
+  } else {
+      // text area method
+      let textArea = document.createElement("textarea");
+      textArea.value = commentText;
+      // make the textarea out of viewport
+      textArea.style.position = "fixed";
+      textArea.style.left = "-999999px";
+      textArea.style.top = "-999999px";
+      document.body.appendChild(textArea);
+      textArea.focus();
+      textArea.select();
+      return new Promise((res, rej) => {
+          // here the magic happens
+          document.execCommand('copy') ? res() : rej();
+          textArea.remove();
+      });
+  }
+
+
+
   }
  
   return (
