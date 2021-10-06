@@ -118,7 +118,7 @@ MClose = ${data.MClose} + gap
 
 
 
-  }
+  
  
   return (
     <div className='indicatorBox'>
