@@ -157,11 +157,15 @@ const Grid00 = ({ data, spread, market }) => {
   RETURN 
   `);
 
-
   const copy = async () => {
-    await navigator.clipboard.writeText(commentText);
-  
-  }
+    const tempInput = document.createElement('input')
+    tempInput.value = `${commentText}`
+    document.body.appendChild(tempInput)
+    tempInput.select()
+    document.execCommand('copy')
+    document.body.removeChild(tempInput)
+    ;
+}
  
   return (
     <div className='indicatorBox'>

@@ -105,13 +105,7 @@ MClose = ${data.MClose} + gap
   `)
 
   const copy = async () => {
-/*      navigator.clipboard.writeText(commentText);
-  
-    if (navigator.clipboard && window.isSecureContext) {
-      // navigator clipboard api method'
-      return await navigator.clipboard.writeText(commentText);
-  } else {
-      // text area method */
+
       const tempInput = document.createElement('input')
       tempInput.value = `${commentText}`
       document.body.appendChild(tempInput)
@@ -122,9 +116,6 @@ MClose = ${data.MClose} + gap
   }
 
 
-
-  
- 
   return (
     <div className='indicatorBox'>
       <label for="ProRealTime"></label>
