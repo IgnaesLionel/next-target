@@ -32,13 +32,21 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </li>
       </ul>
       <h1> Nasdaq</h1>
-      <h2> indice - {timeCfd}</h2>
-      <h2> future - {timeFut}</h2>
+      <h2> cash mise à jour :  {timeCfd}</h2>
+      <h2> future mise à jour :  {timeFut}</h2>
+      <h4>Nasdaq Cash indicator</h4>
+      <ProRealTime data={data} spread={0} market="Cash" />
+      <h4>Nasdaq Future indicator</h4>
+      <ProRealTime data={dataFut} spread={spread} market="Fut" />
+      <h4>Grid Cash</h4>
+      <Grid00 data={data} spread={0} market="Cash" />
+      <h4>Grid Future</h4>
+      <Grid00 data={data} spread={spread} market="Fut" />
       <table>
         <tr>
           <td>
-            Pivots Journalier CASH avec les données de la période du{" "}
-            {data.Ddate}
+          <h4>Pivots Journalier CASH avec les données de la période du{" "}
+            {data.Ddate}</h4>
           </td>
         </tr>
         <tr>
@@ -64,8 +72,8 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </tr>
         <tr>
           <td>
-            Pivots Hebdo CASH avec les données de la période de la semaine du{" "}
-            {data.Wdate}
+          <h4>  Pivots Hebdo CASH avec les données de la période de la semaine du{" "}
+            {data.Wdate}</h4>
           </td>
         </tr>
         <tr>
@@ -91,7 +99,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </tr>
         <tr>
           <td>
-            Pivots Mensuel CASH avec les données de la période {data.Mdate}
+          <h4>Pivots Mensuel CASH avec les données de la période {data.Mdate}</h4>
           </td>
         </tr>
         <tr>
@@ -118,8 +126,8 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
 
         <tr>
           <td>
-            Pivots Journalier Future avec les données de la période du{" "}
-            {dataFut.Ddate}
+          <h4> Pivots Journalier Future avec les données de la période du{" "}
+            {dataFut.Ddate}</h4>
           </td>
         </tr>
         <tr>
@@ -145,8 +153,8 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </tr>
         <tr>
           <td>
-            Pivots Hebdo Future avec les données de la période de la semaine du{" "}
-            {dataFut.Wdate}
+          <h4>Pivots Hebdo Future avec les données de la période de la semaine du{" "}
+            {dataFut.Wdate}</h4>
           </td>
         </tr>
         <tr>
@@ -172,7 +180,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         </tr>
         <tr>
           <td>
-            Pivots Mensuel Future avec les données de la période {dataFut.Ddate}
+            <h4>Pivots Mensuel Future avec les données de la période {dataFut.Ddate} </h4>
           </td>
         </tr>
         <tr>
@@ -197,14 +205,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
           <td>NasdaqMS3 = {dataFut.MS3}</td>
         </tr>
       </table>
-      <h4>Nasdaq Spot indicator</h4>
-      <ProRealTime data={data} spread={0} market="Cash" />
-      <h4>Nasdaq Futur indicator</h4>
-      <ProRealTime data={dataFut} spread={spread} market="Fut" />
-      <h4>GRID</h4>
-      <Grid00 data={dataFut} spread={0} market="Cash" />
-      grid futur
-      <Grid00 data={dataFut} spread={spread} market="Fut" />
+  
     </div>
   );
 }

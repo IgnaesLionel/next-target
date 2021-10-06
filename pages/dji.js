@@ -32,14 +32,22 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </li>
       </ul>
       <h1> Dow Jones / Wall Street</h1>
-      <h2> indice - {timeCfd}</h2>
-      <h2> future - {timeFut}</h2>
+      <h2> cash mise à jour :  {timeCfd}</h2>
+      <h2> future mise à jour :  {timeFut}</h2>
+      <h4>Dji Cash indicator</h4>
+      <ProRealTime data={data} spread={0} market="Cash" />
+      <h4>Dji Future indicator</h4>
+      <ProRealTime data={dataFut} spread={spread} market="Fut" />
+      <h4>Grid Cash</h4>
+      <Grid00 data={data} spread={0} market="Cash" />
+      <h4>Grid Future</h4>
+      <Grid00 data={data} spread={spread} market="Fut" />
       <table>
         <thead>
           <strong>
             {" "}
-            Pivots Journalier CASH avec les données de la période du{" "}
-            {data.Ddate}{" "}
+            <h4>   Pivots Journalier CASH avec les données de la période du{" "}
+            {data.Ddate}{" "}</h4>
           </strong>
         </thead>
         <tbody>
@@ -67,8 +75,8 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </tbody>
 
         <thead>
-          Pivots Hebdo CASH avec les données de la période de la semaine du{" "}
-          {data.Wdate}
+        <h4>   Pivots Hebdo CASH avec les données de la période de la semaine du{" "}
+          {data.Wdate}</h4>
         </thead>
         <tbody>
           <tr>
@@ -94,7 +102,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           </tr>
         </tbody>
         <thead>
-          Pivots Mensuel CASH avec les données de la période {data.Mdate}
+        <h4>Pivots Mensuel CASH avec les données de la période {data.Mdate}</h4>
         </thead>
         <tbody>
           <tr>
@@ -120,8 +128,8 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           </tr>
         </tbody>
         <thead>
-          Pivots Journalier Future avec les données de la période du{" "}
-          {dataFut.Ddate}
+        <h4>   Pivots Journalier Future avec les données de la période du{" "}
+          {dataFut.Ddate}</h4>
         </thead>
 
         <tr>
@@ -147,8 +155,8 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
         </tr>
 
         <thead>
-          Pivots Hebdo Future avec les données de la période de la semaine du{" "}
-          {dataFut.Wdate}
+        <h4>Pivots Hebdo Future avec les données de la période de la semaine du{" "}
+          {dataFut.Wdate}</h4>
         </thead>
         <tbody>
           <tr>
@@ -173,8 +181,8 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
             <td>djiWS3 = {dataFut.WS3}</td>
           </tr>
         </tbody>
-        <thead>
-          Pivots Mensuel Future avec les données de la période {dataFut.Ddate}
+        <thead><h4>
+          Pivots Mensuel Future avec les données de la période {dataFut.Ddate}</h4>
         </thead>
         <tbody>
           <tr>
@@ -200,14 +208,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           </tr>
         </tbody>
       </table>
-      <h4>Dji Spot indicator</h4>
-      <ProRealTime data={data} spread={0} market="Cash" />
-      <h4>Dji Futur indicator</h4>
-      <ProRealTime data={dataFut} spread={spread} market="Fut" />
-      <h4>GRID CFD</h4>
-      <Grid00 data={data} spread={0} market="Cash" />
-      grid futur
-      <Grid00 data={data} spread={spread} market="Fut" />
+
     </div>
   );
 }
