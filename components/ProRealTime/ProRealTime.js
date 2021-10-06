@@ -112,7 +112,12 @@ MClose = ${data.MClose} + gap
       return await navigator.clipboard.writeText(commentText);
   } else {
       // text area method
-     console.log('test')
+      const tempInput = document.createElement('input')
+      tempInput.value = 'https://bionicjulia.com/examplelink'
+      document.body.appendChild(tempInput)
+      tempInput.select()
+      document.execCommand('copy')
+      document.body.removeChild(tempInput)
       };
   }
 
