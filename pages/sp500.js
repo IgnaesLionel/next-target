@@ -1,7 +1,8 @@
 import React from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
-import Link from "next/link";
+import Navigation from "../components/Navigation/Navigation"
+
 
 export default function sp({ data, spread, dataFut, timeFut, timeCfd }) {
   data = JSON.parse(data);
@@ -9,28 +10,7 @@ export default function sp({ data, spread, dataFut, timeFut, timeCfd }) {
 
   return (
     <div className="accueil">
-      <ul>
-        <li>
-          <Link href="/dji">
-            <a>Dji (Wall Street)</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/dax">
-            <a>Dax (Germany 40)</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/nasdaq">
-            <a>Nasdaq (US-TECH 100)</a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/sp500">
-            <a>Sp500 (US-TECH 500)</a>
-          </Link>
-        </li>
-      </ul>
+    <Navigation/>
       <h1> Sp500</h1>
       <h2> cash mise à jour :  {timeCfd}</h2>
       <h2> future mise à jour :  {timeFut}</h2>

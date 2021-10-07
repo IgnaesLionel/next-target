@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
-import Link from "next/link";
+import Navigation from "../components/Navigation/Navigation"
+
 import axios from "axios";
 
 export default function send() {
@@ -115,6 +116,7 @@ console.log("submit")
 
   return (
     <div className="accueil">
+    <Navigation/>
       <h1>Send data </h1>
 
       <form className="sectionModal" onSubmit={handleSubmit}>
