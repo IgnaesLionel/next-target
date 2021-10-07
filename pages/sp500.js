@@ -49,9 +49,11 @@ export default function sp({ data, spread, dataFut, timeFut, timeCfd }) {
             {data.Ddate}</h4>
           </td>
         </tr>
+     
         <tr>
           <td>SpDPP = {data.DClose}</td>
         </tr>
+      
         <tr>
           <td>SpDR1 = {data.DR1}</td>
         </tr>

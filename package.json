@@ -8,6 +8,7 @@
     "start": "next start -p 3005"
   },
   "dependencies": {
+    "axios": "^0.22.0",
     "next": "10.2.3",
     "node-cron": "^3.0.0",
     "puppeteer": "^9.1.1",
