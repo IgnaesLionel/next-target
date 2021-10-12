@@ -15,7 +15,7 @@ const ProRealTime = ({ data, spread, market }) => {
   DS3 = ${data.DS3} + gap
   WPP = ${data.WPP} + gap
   WR1 = ${data.WR1} + gap
-  WS1 = ${data.WR1} + gap
+  WS1 = ${data.WS1} + gap
   WR2 = ${data.WR2} + gap
   WS2 = ${data.WS2} + gap
   WR3 = ${data.WR3} + gap
