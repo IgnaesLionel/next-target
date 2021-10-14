@@ -7,9 +7,7 @@ const ProRealTime = ({ data, spread, market }) => {
   Voffset = 1*pipsize
   gap = 0
   DPP = ${data.DPP} + gap
- 
   DR1 = ${data.DR1} + gap
-
   DS1 = ${data.DS1} + gap
   DR2 = ${data.DR2} + gap
   DS2 = ${data.DS2} + gap
@@ -52,26 +50,19 @@ const ProRealTime = ({ data, spread, market }) => {
   mMS3 = ${(data.MS2+data.MS3)/2} + gap
 
   DayHigh = ${data.DHigh} + gap
-DayLow = ${data.DLow} + gap
-DayClose = ${data.DClose} + gap
-DMiddle = ${(data.DHigh+data.DLow)/2} + gap
-WHigh = ${data.WHigh} + gap
-WLow = ${data.WLow} + gap
-WClose = ${data.WClose} + gap
-WMiddle = ${(data.WHigh+data.WLow)/2} + gap
-MHigh = ${data.MHigh} + gap
-MLow = ${data.MLow} + gap
-MClose = ${data.MClose} + gap
-MMiddle = ${(data.MHigh+data.MLow)/2} + gap
+  DayLow = ${data.DLow} + gap
+  DayClose = ${data.DClose} + gap
+  DMiddle = ${(data.DHigh+data.DLow)/2} + gap
+  WHigh = ${data.WHigh} + gap
+  WLow = ${data.WLow} + gap
+  WClose = ${data.WClose} + gap
+  WMiddle = ${(data.WHigh+data.WLow)/2} + gap
+  MHigh = ${data.MHigh} + gap
+  MLow = ${data.MLow} + gap
+  MClose = ${data.MClose} + gap
+  MMiddle = ${(data.MHigh+data.MLow)/2} + gap
 
 
-  DRAWHLINE(DPP)coloured(0,227,0)
-  DRAWHLINE(DR1)coloured(0,227,0)
-  DRAWHLINE(DR2)coloured(0,227,0)
-  DRAWHLINE(DR3)coloured(0,227,0)
-  DRAWHLINE(DS1)coloured(0,227,0)
-  DRAWHLINE(DS2)coloured(0,227,0)
-  DRAWHLINE(DS3)coloured(0,227,0)
   DRAWHLINE(WPP)coloured(0,0,255)
   DRAWHLINE(WR1)coloured(0,0,255)
   DRAWHLINE(WR2)coloured(0,0,255)
@@ -86,13 +77,6 @@ MMiddle = ${(data.MHigh+data.MLow)/2} + gap
   DRAWHLINE(MS1)coloured(36, 185, 255)
   DRAWHLINE(MS2)coloured(36, 185, 255)
   DRAWHLINE(MS3)coloured(36, 185, 255)
-
-  DRAWHLINE(mDR1)coloured(0,227,0)
-  DRAWHLINE(mDR2)coloured(0,227,0)
-  DRAWHLINE(mDR3)coloured(0,227,0)
-  DRAWHLINE(mDS1)coloured(0,227,0)
-  DRAWHLINE(mDS2)coloured(0,227,0) 
-  DRAWHLINE(mDS3)coloured(0,227,0)
 
   DRAWHLINE(mWR1)coloured(0,0,255)
   DRAWHLINE(mWR2)coloured(0,0,255)
@@ -120,15 +104,6 @@ MMiddle = ${(data.MHigh+data.MLow)/2} + gap
   DRAWHLINE(DMiddle)coloured(255,255,0)
   DRAWHLINE(MMiddle)coloured(255,255,0)
   DRAWHLINE(WMiddle)coloured(255,255,0)
-
-
-  DRAWTEXT("Pivot D ${market}.",barindex+10,DPP+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("DR1 ${market}",barindex+10,DR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("DR2 ${market}",barindex+10,DR2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("DR3 ${market}",barindex+10,DR3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("DS1 ${market}",barindex+10,DS1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("DS2 ${market}",barindex+10,DS2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("DS3 ${market}",barindex+10,DS3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
 
   DRAWTEXT("mDR1 ${market}",barindex+10,mDR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
   DRAWTEXT("mDR2 ${market}",barindex+10,mDR2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
@@ -181,7 +156,15 @@ MMiddle = ${(data.MHigh+data.MLow)/2} + gap
   DRAWTEXT("Middle Last Week ${market}",barindex+10,WMiddle+Voffset,SansSerif,Bold,10)coloured(255,255,255)
   DRAWTEXT("Middle Last Month ${market}",barindex+10,MMiddle+Voffset,SansSerif,Bold,10)coloured(255,255,255)
 
-  RETURN
+  DRAWTEXT("Pivot D ${market}.",barindex+10,DPP+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("DR1 ${market}",barindex+10,DR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("DR2 ${market}",barindex+10,DR2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("DR3 ${market}",barindex+10,DR3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("DS1 ${market}",barindex+10,DS1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("DS2 ${market}",barindex+10,DS2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("DS3 ${market}",barindex+10,DS3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+
+  RETURN DR1 coloured(0,255,0) style(line,1) as "DR1",  DR2 coloured(0,255,0) style(line,1) as "DR2", DR3 coloured(0,255,0) style(line,1) as "DR3", DS1 coloured(0,255,0) style(line,1) as "DS1",  DS2 coloured(0,255,0) style(line,1) as "DS2", DS3 coloured(0,255,0) style(line,1) as "DS3", mDR1 coloured(0,255,0) style(line,1) as "mDR1",  mDR2 coloured(0,255,0) style(line,1) as "mDR2", mDR3 coloured(0,255,0) style(line,1) as "mDR3", mDS1 coloured(0,255,0) style(line,1) as "mDS1",  mDS2 coloured(0,255,0) style(line,1) as "mDS2", mDS3 coloured(0,255,0) style(line,1) as "mDS3"
   `)
 
   const copy = async () => {

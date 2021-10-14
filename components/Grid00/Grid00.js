@@ -2,7 +2,6 @@ import React, { useState} from 'react';
 
 const Grid00 = ({ data, spread, market }) => {
 
-
   let style = [
     "COLOURED(255,0,0)",
     "COLOURED(255,0,0)",

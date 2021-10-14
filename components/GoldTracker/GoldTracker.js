@@ -47,7 +47,7 @@ const GoldTracker = ({ dataCfd, dataFut }) => {
     ["niv22",closeCashValue - 400],
     ["niv23",closeCashValue - 500],
     ["niv24",closeCashValue - 600],
-   ["niv25",closeCashValue - 700],
+    ["niv25",closeCashValue - 700],
     ["niv26",closeCashValue - 800],
     ["niv27",closeCashValue - 900]
 ]
