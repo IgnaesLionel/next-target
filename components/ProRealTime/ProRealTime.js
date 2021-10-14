@@ -92,9 +92,7 @@ const ProRealTime = ({ data, spread, market }) => {
   DRAWHLINE(mMS2)coloured(36, 185, 255) 
   DRAWHLINE(mMS3)coloured(36, 185, 255)
 
-  DRAWHLINE(DayHigh)coloured(255,255,255)
-  DRAWHLINE(DayLow)coloured(255,255,255)
-  DRAWHLINE(DayClose)coloured(255,255,255)
+
   DRAWHLINE(WHigh)coloured(255,255,255)
   DRAWHLINE(WLow)coloured(255,255,255)
   DRAWHLINE(WClose)coloured(255,255,255)
@@ -164,7 +162,11 @@ const ProRealTime = ({ data, spread, market }) => {
   DRAWTEXT("DS2 ${market}",barindex+10,DS2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
   DRAWTEXT("DS3 ${market}",barindex+10,DS3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
 
-  RETURN DR1 coloured(0,255,0) style(line,1) as "DR1",  DR2 coloured(0,255,0) style(line,1) as "DR2", DR3 coloured(0,255,0) style(line,1) as "DR3", DS1 coloured(0,255,0) style(line,1) as "DS1",  DS2 coloured(0,255,0) style(line,1) as "DS2", DS3 coloured(0,255,0) style(line,1) as "DS3", mDR1 coloured(0,255,0) style(line,1) as "mDR1",  mDR2 coloured(0,255,0) style(line,1) as "mDR2", mDR3 coloured(0,255,0) style(line,1) as "mDR3", mDS1 coloured(0,255,0) style(line,1) as "mDS1",  mDS2 coloured(0,255,0) style(line,1) as "mDS2", mDS3 coloured(0,255,0) style(line,1) as "mDS3"
+  DRAWHLINE(DayHigh)coloured(255,255,255)
+  DRAWHLINE(DayLow)coloured(255,255,255)
+  DRAWHLINE(DayClose)coloured(255,255,255)
+
+  RETURN DR1 coloured(0,255,0) style(line,1) as "DR1",  DR2 coloured(0,255,0) style(line,1) as "DR2", DR3 coloured(0,255,0) style(line,1) as "DR3", DS1 coloured(0,255,0) style(line,1) as "DS1",  DS2 coloured(0,255,0) style(line,1) as "DS2", DS3 coloured(0,255,0) style(line,1) as "DS3", mDR1 coloured(0,255,0) style(line,1) as "mDR1",  mDR2 coloured(0,255,0) style(line,1) as "mDR2", mDR3 coloured(0,255,0) style(line,1) as "mDR3", mDS1 coloured(0,255,0) style(line,1) as "mDS1",  mDS2 coloured(0,255,0) style(line,1) as "mDS2", mDS3 coloured(0,255,0) style(line,1) as "mDS3", DayHigh coloured(255,255,0) style(line,1) as "DayHigh",  DayLow coloured(255,255,0) style(line,1) as "DayLow", DayClose coloured(255,255,0) style(line,1) as "DayClose"
   `)
 
   const copy = async () => {
