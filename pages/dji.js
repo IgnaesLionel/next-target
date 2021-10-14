@@ -1,6 +1,7 @@
 import React from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
+import GoldTracker from "../components/GoldTracker/GoldTracker"
 import Navigation from "../components/Navigation/Navigation"
 
 export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
@@ -187,7 +188,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           </tr>
         </tbody>
       </table>
-
+<GoldTracker  dataCfd={data} dataFut={dataFut}/>
     </div>
   );
 }
