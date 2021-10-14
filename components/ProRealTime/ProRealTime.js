@@ -5,7 +5,7 @@ const ProRealTime = ({ data, spread, market }) => {
   const [commentText, setCommentText] = useState(`
   defparam drawonlastbaronly = true
   Voffset = 1*pipsize
-  gap = 0
+  gap = 0 // Cash = 0 
   DPP = ${data.DPP} + gap
   DR1 = ${data.DR1} + gap
   DS1 = ${data.DS1} + gap

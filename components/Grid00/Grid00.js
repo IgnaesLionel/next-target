@@ -67,7 +67,7 @@ const Grid00 = ({ data, spread, market }) => {
   defparam drawonlastbaronly = true
   Voffset = 1*pipsize
 
-  gap = ${spread}
+  gap = ${spread} // Cash = 0
   g0 = ${roundedNumber[0]} + gap
    g1 = ${roundedNumber[1]} + gap
    g2 = ${roundedNumber[2]} + gap
