@@ -316,12 +316,20 @@ for (let i = 0; i < duplicatesNum.length; i++) {
 
   myArrayAveragedNumber = myArrayAveragedNumber.map((a)=> Math.round(a))
 
+
+
+if (isNaN(myArrayAveragedNumber[0])) {
+  return myArrayAveragedNumber.shift();
+}
+
+
+
  const addDrawRectangle=  myArrayAveragedNumber.map((x,i)=>`drawrectangle(starttimeOPR,${x-3},endtimeOPR,${x+3})coloured(255,255,0,50)bordercolor(255,255,111) STYLE(line,1) 
  `)
 
- const resultDraw = addDrawRectangle.join("")
+  const resultDraw = addDrawRectangle.join("")
 
-console.log(resultDraw)
+
  return (
     <div className='indicatorBox'>
     <label for="GoldTracker"></label>
