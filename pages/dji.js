@@ -1,27 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
 import GoldTracker from "../components/GoldTracker/GoldTracker"
 import Navigation from "../components/Navigation/Navigation"
 
 export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
+  const [gap, setGap] = useState(0);
   data = JSON.parse(data);
   dataFut = JSON.parse(dataFut);
 
+  function handleChange(e) {
+    setGap(e.target.value);
+  }
   return (
     <div className="accueil">
     <Navigation/>
       <h1> Dow Jones / Wall Street</h1>
       <h2> cash mise à jour :  {timeCfd}</h2>
       <h2> future mise à jour :  {timeFut}</h2>
+      <label>Gap cfd/futur</label>
+      <input value={gap} onChange={handleChange}></input>
       <h4>Dji Cash indicator</h4>
-      <ProRealTime data={data} spread={0} market="Cash" />
+      <ProRealTime gap={0} data={data} spread={0} market="Cash" />
       <h4>Dji Future indicator</h4>
-      <ProRealTime data={dataFut} spread={spread} market="Fut" />
+      <ProRealTime gap={gap} data={dataFut} spread={spread} market="Fut" />
       <h4>Grid Cash</h4>
-      <Grid00 data={data} spread={0} market="Cash" />
+      <Grid00 gap={0} data={data} spread={0} market="Cash" />
       <h4>Grid Future</h4>
-      <Grid00 data={data} spread={spread} market="Fut" />
+      <Grid00 gap={gap} data={data} spread={spread} market="Fut" />
+      <h4>Zones détectées</h4>
+      <GoldTracker  gap={gap} dataCfd={data} dataFut={dataFut}/>
       <table>
         <thead>
           <strong>
@@ -188,7 +196,7 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
           </tr>
         </tbody>
       </table>
-<GoldTracker  dataCfd={data} dataFut={dataFut}/>
+
     </div>
   );
 }

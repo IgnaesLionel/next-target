@@ -1,11 +1,15 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 
-const ProRealTime = ({ data, spread, market }) => {
+const ProRealTime = ({ gap, data, spread, market }) => {
 
-  const [commentText, setCommentText] = useState(`
+
+const [commentText, setCommentText] = useState()
+
+useEffect(() => {
+  setCommentText(`
   defparam drawonlastbaronly = true
-  Voffset = 1*pipsize
-  gap = 0 // Cash = 0 
+  Voffset = 0.5*pipsize
+  gap = ${gap} // Cash = 0 
   DPP = ${data.DPP} + gap
   DR1 = ${data.DR1} + gap
   DS1 = ${data.DS1} + gap
@@ -164,6 +168,10 @@ const ProRealTime = ({ data, spread, market }) => {
 
   RETURN DR1 coloured(0,255,0) style(line,1) as "DR1 ${market}",  DR2 coloured(0,255,0) style(line,1) as "DR2 ${market}", DR3 coloured(0,255,0) style(line,1) as "DR3 ${market}", DS1 coloured(0,255,0) style(line,1) as "DS1 ${market}",  DS2 coloured(0,255,0) style(line,1) as "DS2 ${market}", DS3 coloured(0,255,0) style(line,1) as "DS3 ${market}", mDR1 coloured(0,255,0) style(line,1) as "mDR1 ${market}",  mDR2 coloured(0,255,0) style(line,1) as "mDR2 ${market}", mDR3 coloured(0,255,0) style(line,1) as "mDR3 ${market}", mDS1 coloured(0,255,0) style(line,1) as "mDS1 ${market}",  mDS2 coloured(0,255,0) style(line,1) as "mDS2 ${market}", mDS3 coloured(0,255,0) style(line,1) as "mDS3 ${market}", DayHigh coloured(255,255,0) style(line,1) as "DayHigh ${market}",  DayLow coloured(255,255,0) style(line,1) as "DayLow ${market}", DayClose coloured(255,255,0) style(line,1) as "DayClose ${market}", DPP coloured(0,255,0) style(line,1) as "DPP ${market}"
   `)
+}, [gap]);
+
+
+
 
   const copy = async () => {
 
@@ -181,7 +189,6 @@ const ProRealTime = ({ data, spread, market }) => {
   return (
     <div className='indicatorBox'>
       <label for="ProRealTime"></label>
-    
       <textarea
         readOnly
         id="ProRealTime"

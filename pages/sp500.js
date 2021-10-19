@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
 import Navigation from "../components/Navigation/Navigation"
 
 
 export default function sp({ data, spread, dataFut, timeFut, timeCfd }) {
+  const [gap, setGap] = useState(0);
   data = JSON.parse(data);
   dataFut = JSON.parse(dataFut);
+  
+  function handleChange(e) {
+    setGap(e.target.value);
+  }
 
   return (
     <div className="accueil">
@@ -14,6 +19,10 @@ export default function sp({ data, spread, dataFut, timeFut, timeCfd }) {
       <h1> Sp500</h1>
       <h2> cash mise à jour :  {timeCfd}</h2>
       <h2> future mise à jour :  {timeFut}</h2>
+      
+      <label>Gap cfd/futur</label>
+      <input value={gap} onChange={handleChange}></input>
+
       <h4>Sp500 Cash indicator</h4>
       <ProRealTime data={data} spread={0} market="Cash" />
       <h4>Sp500 Future indicator</h4>
