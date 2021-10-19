@@ -15,7 +15,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
   return (
     <div className="accueil">
     <Navigation/>
-      <h1> Nasdaq</h1>
+      <h1> Nasdaq US 100</h1>
       <h2> cash mise à jour :  {timeCfd}</h2>
       <h2> future mise à jour :  {timeFut}</h2>
       <label>Gap cfd/futur</label>
