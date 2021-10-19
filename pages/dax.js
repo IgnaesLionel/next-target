@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
 import Grid00 from "../components/Grid00/Grid00";
 import Navigation from "../components/Navigation/Navigation"
+import GoldTracker from "../components/GoldTracker/GoldTracker"
 
 
 
@@ -23,13 +24,15 @@ export default function dax({ data, spread, dataFut, timeFut, timeCfd }) {
       <label>Gap cfd/futur</label>
       <input value={gap} onChange={handleChange}></input>
       <h4>Dax Cash indicator</h4>
-      <ProRealTime data={data} spread={0} market="Cash" />
+      <ProRealTime gap={0} data={data} spread={0} market="Cash" />
       <h4>Dax Future indicator</h4>
-      <ProRealTime data={dataFut} spread={spread} market="Fut" />
+      <ProRealTime gap={gap} data={dataFut} spread={spread} market="Fut" />
       <h4>Grid Cash</h4>
-      <Grid00 data={data} spread={0} market="Cash" />
+      <Grid00 gap={0} data={data} spread={0} market="Cash" />
       <h4>Grid Future</h4>
-      <Grid00 data={data} spread={spread} market="Fut" />
+      <Grid00 gap={gap} data={data} spread={spread} market="Fut" />
+
+      <GoldTracker  gap={gap} dataCfd={data} dataFut={dataFut}/>
       <table>
         <tr>
           <td>
