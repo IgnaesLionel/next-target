@@ -324,7 +324,7 @@ if (isNaN(myArrayAveragedNumber[0])) {
 
 
 
- const addDrawRectangle=  myArrayAveragedNumber.map((x,i)=>`drawrectangle(starttimeOPR,${x-3},endtimeOPR,${x+3})coloured(255,255,0,50)bordercolor(255,255,111) STYLE(line,1) 
+ const addDrawRectangle=  myArrayAveragedNumber.map((x,i)=>`drawrectangle(starttimeOPR,${x-3},endtimeOPR,${x+3})coloured(255,255,0,10)bordercolor(255,255,111) STYLE(line,1) 
  `)
 
   const resultDraw = addDrawRectangle.join("")

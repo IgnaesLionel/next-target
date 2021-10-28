@@ -34,7 +34,7 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
         <tr>
           <td>
           <h4>Pivots Journalier CASH avec les données de la période du{" "}
-            {data.Ddate}</h4>
+            {data.Ddate} !</h4>
           </td>
         </tr>
         <tr>
