@@ -89,12 +89,12 @@ useEffect(() => {
   DRAWHLINE(mWS2)coloured(135,206,235) 
   DRAWHLINE(mWS3)coloured(135,206,235)
 
-  DRAWHLINE(mMR1)coloured(255,20,147)
-  DRAWHLINE(mMR2)coloured(255,20,147)
-  DRAWHLINE(mMR3)coloured(255,20,147)
-  DRAWHLINE(mMS1)coloured(255,20,147)
-  DRAWHLINE(mMS2)coloured(255,20,147) 
-  DRAWHLINE(mMS3)coloured(255,20,147)
+  DRAWHLINE(mMR1)coloured(127,127,127)
+  DRAWHLINE(mMR2)coloured(127,127,127)
+  DRAWHLINE(mMR3)coloured(127,127,127)
+  DRAWHLINE(mMS1)coloured(127,127,127)
+  DRAWHLINE(mMS2)coloured(127,127,127) 
+  DRAWHLINE(mMS3)coloured(127,127,127)
 
 
   DRAWHLINE(WHigh)coloured(255,255,255)
@@ -103,16 +103,16 @@ useEffect(() => {
   DRAWHLINE(MHigh)coloured(255,255,255)
   DRAWHLINE(MLow)coloured(255,255,255)
   DRAWHLINE(MClose)coloured(255,255,255)
-  DRAWHLINE(DMiddle)coloured(255,255,0)
-  DRAWHLINE(MMiddle)coloured(255,255,0)
-  DRAWHLINE(WMiddle)coloured(255,255,0)
+  DRAWHLINE(DMiddle)coloured(127,127,127)
+  DRAWHLINE(MMiddle)coloured(127,127,127)
+  DRAWHLINE(WMiddle)coloured(127,127,127)
 
-  DRAWTEXT("mDR1 ${market}",barindex+10,mDR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("mDR2 ${market}",barindex+10,mDR2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("mDR3 ${market}",barindex+10,mDR3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("mDS1 ${market}",barindex+10,mDS1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("mDS2 ${market}",barindex+10,mDS2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
-  DRAWTEXT("mDS3 ${market}",barindex+10,mDS3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
+  DRAWTEXT("mDR1 ${market}",barindex+10,mDR1+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mDR2 ${market}",barindex+10,mDR2+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mDR3 ${market}",barindex+10,mDR3+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mDS1 ${market}",barindex+10,mDS1+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mDS2 ${market}",barindex+10,mDS2+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mDS3 ${market}",barindex+10,mDS3+Voffset,SansSerif,Bold,10)coloured(127,127,127)
 
   DRAWTEXT("Pivot W ${market}",barindex+10,WPP+Voffset,SansSerif,Bold,10)coloured(135,206,235)
   DRAWTEXT("WR1 ${market}",barindex+10,WR1+Voffset,SansSerif,Bold,10)coloured(135,206,235)
@@ -122,12 +122,12 @@ useEffect(() => {
   DRAWTEXT("WS2 ${market}",barindex+10,WS2+Voffset,SansSerif,Bold,10)coloured(135,206,235)
   DRAWTEXT("WS3 ${market}",barindex+10,WS3+Voffset,SansSerif,Bold,10)coloured(135,206,235)
 
-  DRAWTEXT("mWR1 ${market}",barindex+10,mWR1+Voffset,SansSerif,Bold,10)coloured(135,206,235)
-  DRAWTEXT("mWR2 ${market}",barindex+10,mWR2+Voffset,SansSerif,Bold,10)coloured(135,206,235)
-  DRAWTEXT("mWR3 ${market}",barindex+10,mWR3+Voffset,SansSerif,Bold,10)coloured(135,206,235)
-  DRAWTEXT("mWS1 ${market}",barindex+10,mWS1+Voffset,SansSerif,Bold,10)coloured(135,206,235)
-  DRAWTEXT("mWS2 ${market}",barindex+10,mWS2+Voffset,SansSerif,Bold,10)coloured(135,206,235)
-  DRAWTEXT("mWS3 ${market}",barindex+10,mWS3+Voffset,SansSerif,Bold,10)coloured(135,206,235)
+  DRAWTEXT("mWR1 ${market}",barindex+10,mWR1+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mWR2 ${market}",barindex+10,mWR2+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mWR3 ${market}",barindex+10,mWR3+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mWS1 ${market}",barindex+10,mWS1+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mWS2 ${market}",barindex+10,mWS2+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mWS3 ${market}",barindex+10,mWS3+Voffset,SansSerif,Bold,10)coloured(127,127,127)
 
   DRAWTEXT("Pivot M ${market}",barindex+10,MPP+Voffset,SansSerif,Bold,10)coloured(255,20,147)
   DRAWTEXT("MR1 ${market}",barindex+10,MR1+Voffset,SansSerif,Bold,10)coloured(255,20,147)
@@ -137,12 +137,12 @@ useEffect(() => {
   DRAWTEXT("MS2 ${market}",barindex+10,MS2+Voffset,SansSerif,Bold,10)coloured(255,20,147)
   DRAWTEXT("MS3 ${market}",barindex+10,MS3+Voffset,SansSerif,Bold,10)coloured(255,20,147)
 
-  DRAWTEXT("mMR1 ${market}",barindex+10,mMR1+Voffset,SansSerif,Bold,10)coloured(255,20,147)
-  DRAWTEXT("mMR2 ${market}",barindex+10,mMR2+Voffset,SansSerif,Bold,10)coloured(255,20,147)
-  DRAWTEXT("mMR3 ${market}",barindex+10,mMR3+Voffset,SansSerif,Bold,10)coloured(255,20,147)
-  DRAWTEXT("mMS1 ${market}",barindex+10,mMS1+Voffset,SansSerif,Bold,10)coloured(255,20,147)
-  DRAWTEXT("mMS2 ${market}",barindex+10,mMS2+Voffset,SansSerif,Bold,10)coloured(255,20,147)
-  DRAWTEXT("mMS3 ${market}",barindex+10,mMS3+Voffset,SansSerif,Bold,10)coloured(255,20,147)
+  DRAWTEXT("mMR1 ${market}",barindex+10,mMR1+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mMR2 ${market}",barindex+10,mMR2+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mMR3 ${market}",barindex+10,mMR3+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mMS1 ${market}",barindex+10,mMS1+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mMS2 ${market}",barindex+10,mMS2+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("mMS3 ${market}",barindex+10,mMS3+Voffset,SansSerif,Bold,10)coloured(127,127,127)
 
   DRAWTEXT("Last Day High ${market}",barindex+10,DayHigh+Voffset,SansSerif,Bold,10)coloured(255,255,255)
   DRAWTEXT("Last Day Low ${market}",barindex+10,DayLow+Voffset,SansSerif,Bold,10)coloured(255,255,255)
@@ -154,9 +154,9 @@ useEffect(() => {
   DRAWTEXT("Last Month Low ${market}",barindex+10,MLow+Voffset,SansSerif,Bold,10)coloured(255,255,255)
   DRAWTEXT("Last Month Close ${market}",barindex+10,MClose+Voffset,SansSerif,Bold,10)coloured(255,255,255)
 
-  DRAWTEXT("Middle Last Day ${market}",barindex+10,DMiddle+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-  DRAWTEXT("Middle Last Week ${market}",barindex+10,WMiddle+Voffset,SansSerif,Bold,10)coloured(255,255,255)
-  DRAWTEXT("Middle Last Month ${market}",barindex+10,MMiddle+Voffset,SansSerif,Bold,10)coloured(255,255,255)
+  DRAWTEXT("Middle Last Day ${market}",barindex+10,DMiddle+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("Middle Last Week ${market}",barindex+10,WMiddle+Voffset,SansSerif,Bold,10)coloured(127,127,127)
+  DRAWTEXT("Middle Last Month ${market}",barindex+10,MMiddle+Voffset,SansSerif,Bold,10)coloured(127,127,127)
 
   DRAWTEXT("Pivot D ${market}.",barindex+10,DPP+Voffset,SansSerif,Bold,10)coloured(0,255,0)
   DRAWTEXT("DR1 ${market}",barindex+10,DR1+Voffset,SansSerif,Bold,10)coloured(0,255,0)
@@ -166,7 +166,7 @@ useEffect(() => {
   DRAWTEXT("DS2 ${market}",barindex+10,DS2+Voffset,SansSerif,Bold,10)coloured(0,255,0)
   DRAWTEXT("DS3 ${market}",barindex+10,DS3+Voffset,SansSerif,Bold,10)coloured(0,255,0)
 
-  RETURN DR1 coloured(0,255,0) style(line,1) as "DR1 ${market}",  DR2 coloured(0,255,0) style(line,1) as "DR2 ${market}", DR3 coloured(0,255,0) style(line,1) as "DR3 ${market}", DS1 coloured(0,255,0) style(line,1) as "DS1 ${market}",  DS2 coloured(0,255,0) style(line,1) as "DS2 ${market}", DS3 coloured(0,255,0) style(line,1) as "DS3 ${market}", mDR1 coloured(0,255,0) style(line,1) as "mDR1 ${market}",  mDR2 coloured(0,255,0) style(line,1) as "mDR2 ${market}", mDR3 coloured(0,255,0) style(line,1) as "mDR3 ${market}", mDS1 coloured(0,255,0) style(line,1) as "mDS1 ${market}",  mDS2 coloured(0,255,0) style(line,1) as "mDS2 ${market}", mDS3 coloured(0,255,0) style(line,1) as "mDS3 ${market}", DayHigh coloured(255,255,0) style(line,1) as "DayHigh ${market}",  DayLow coloured(255,255,0) style(line,1) as "DayLow ${market}", DayClose coloured(255,255,0) style(line,1) as "DayClose ${market}", DPP coloured(0,255,0) style(line,1) as "DPP ${market}"
+  RETURN DR1 coloured(0,255,0) style(line,1) as "DR1 ${market}",  DR2 coloured(0,255,0) style(line,1) as "DR2 ${market}", DR3 coloured(0,255,0) style(line,1) as "DR3 ${market}", DS1 coloured(0,255,0) style(line,1) as "DS1 ${market}",  DS2 coloured(0,255,0) style(line,1) as "DS2 ${market}", DS3 coloured(0,255,0) style(line,1) as "DS3 ${market}", mDR1 coloured(0,255,0) style(line,1) as "mDR1 ${market}",  mDR2 coloured(127,127,127) style(line,1) as "mDR2 ${market}", mDR3 coloured(127,127,127) style(line,1) as "mDR3 ${market}", mDS1 coloured(127,127,127) style(line,1) as "mDS1 ${market}",  mDS2 coloured(127,127,127) style(line,1) as "mDS2 ${market}", mDS3 coloured(127,127,127) style(line,1) as "mDS3 ${market}", DayHigh coloured(255,255,0) style(line,1) as "DayHigh ${market}",  DayLow coloured(255,255,0) style(line,1) as "DayLow ${market}", DayClose coloured(255,255,0) style(line,1) as "DayClose ${market}", DPP coloured(0,255,0) style(line,1) as "DPP ${market}"
   `)
 }, [gap]);
 
