@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
+import MajorLevels from "../components/MajorLevels/MajorLevels";
 import Grid00 from "../components/Grid00/Grid00";
 import GoldTracker from "../components/GoldTracker/GoldTracker"
 import Navigation from "../components/Navigation/Navigation"
@@ -20,6 +21,12 @@ export default function dji({ data, spread, dataFut, timeFut, timeCfd }) {
       <h2> future mise à jour :  {timeFut}</h2>
       <label>Gap cfd/futur</label>
       <input value={gap} onChange={handleChange}></input>
+
+      <h4>Dji Major Levels Cash indicator</h4>
+      <MajorLevels  gap={0} data={data} spread={0} market="Cash" />
+      <h4>Dji Major Levels Futur indicator</h4>
+      <MajorLevels  gap={gap} data={dataFut} spread={spread} market="Fut" />
+
       <h4>Dji Cash indicator</h4>
       <ProRealTime gap={0} data={data} spread={0} market="Cash" />
       <h4>Dji Future indicator</h4>
