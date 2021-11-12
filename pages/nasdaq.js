@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProRealTime from "../components/ProRealTime/ProRealTime";
+import MajorLevels from "../components/MajorLevels/MajorLevels";
 import Grid00 from "../components/Grid00/Grid00";
 import Navigation from "../components/Navigation/Navigation"
 import GoldTracker from "../components/GoldTracker/GoldTracker"
@@ -20,6 +21,12 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
       <h2> future mise à jour :  {timeFut}</h2>
       <label>Gap cfd/futur</label>
       <input value={gap} onChange={handleChange}></input>
+
+      <h4>Nasdaq Major Levels Cash indicator</h4>
+      <MajorLevels  gap={0} data={data} spread={0} market="Cash" />
+      <h4>Nasdaq Major Levels Futur indicator</h4>
+      <MajorLevels  gap={gap} data={dataFut} spread={spread} market="Fut" />
+
       <h4>Nasdaq Cash indicator</h4>
       <ProRealTime  gap={0} data={data} spread={0} market="Cash" />
       <h4>Nasdaq Future indicator</h4>
