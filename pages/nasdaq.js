@@ -27,9 +27,9 @@ export default function nasdaq({ data, spread, dataFut, timeFut, timeCfd }) {
       <h4>Nasdaq Major Levels Futur indicator</h4>
       <MajorLevels  gap={gap} data={dataFut} spread={spread} market="Fut" />
 
-      <h4>Nasdaq Cash indicator</h4>
+      <h4>Nasdaq Full levels Cash indicator</h4>
       <ProRealTime  gap={0} data={data} spread={0} market="Cash" />
-      <h4>Nasdaq Future indicator</h4>
+      <h4>Nasdaq Full levels Future indicator</h4>
       <ProRealTime  gap={gap} data={dataFut} spread={spread} market="Fut" />
       <h4>Grid Cash</h4>
       <Grid00  gap={0} data={data} spread={0} market="Cash" />
